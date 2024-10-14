@@ -1,126 +1,563 @@
 /* Hero Container */
 .hero-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 50px 100px; /* Add padding for space on both ends */
-    position: relative;
-    background-color: #ffffff;
-    margin: 0 50px; /* Add margin for space on both ends */
-    min-height: 70vh;
-  }
-  
-  /* Hero Text Section */
-  .hero-text {
-    flex: 1;
-    padding-right: 50px;
-  }
-  
-  .hero-text h1 {
-    font-size: 3.5rem; /* Increase font size for visibility */
-    margin: 0;
-    line-height: 1.2;
-  }
-  
-  .hero-text h2 {
-    font-size: 3.5rem; /* Adjusted font size for second line */
-    margin-top: 0;
-    margin-bottom: 20px;
-    color: orange; /* Highlight color */
-  }
-  
-  .hero-text p {
-    font-size: 1.5rem;
-    margin: 20px 0;
-  }
-  
-  .hero-text .highlight {
-    color: orange;
-    transition: opacity 0.5s ease-in-out;
-  }
-  
-  /* Button */
-  .hero-button {
-    padding: 15px 30px;
-    background-color: orange;
-    color: white;
-    border: none;
-    cursor: pointer;
-    font-size: 18px;
-    transition: background-color 0.3s;
-  }
-  
-  .hero-button:hover {
-    background-color: darkorange;
-  }
-  
-  /* Hero Image Section */
-  .hero-image-container {
-    position: relative;
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .hero-image {
-    width: 100%;
-    max-width: 650px;
-    height: auto;
-    border-radius: 55% 45% 60% 40% / 40% 60% 35% 65%; /* Custom organic oval shape */
-    position: relative;
-  }
-  
-  /* Overlay Content on the Image */
-  .hero-overlay {
-    position: absolute;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    height: 100%;
-    width: 100%;
-    padding: 20px;
-    text-align: center;
-    z-index: 2; /* Ensure content is above the image */
-  }
-  
-  .collaboration-item {
-    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
-    padding: 10px;
-    border-radius: 10px;
-    width: auto; /* Adjust width */
-    display: inline-flex; /* Align items in a single line */
-    align-items: center;
-    border: 1px solid orange; /* Slim border */
-  }
-  
-  .collaboration-item h3 {
-    font-size: 16px;
-    margin-right: 10px; /* Margin between heading and text */
-    color: orange;
-  }
-  
-  .collaboration-item p {
-    font-size: 14px;
-  }
-  
-  /* Specific positioning for each item */
-  .automation {
-    position: absolute;
-    top: -15%;
-    right: 10%;
-  }
-  
-  .collaboration {
-    position: absolute;
-    bottom: 15%;
-    left: 5%;
-  }
-  
-  .engagement {
-    position: absolute;
-    bottom: 10%;
-    right: 10%;
-  }
-  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 100px;
+  /* Add padding for space on both ends */
+  position: relative;
+  background-color: #ffffff;
+  margin: 0 50px;
+  min-height: 70vh;
+}
+
+/* Hero Text Section */
+.hero-text {
+  flex: 1;
+  padding-right: 50px;
+}
+
+.hero-text h1 {
+  font-size: 3.5rem;
+  /* Increase font size for visibility */
+  margin: 0;
+  line-height: 1.2;
+}
+
+.hero-text h2 {
+  font-size: 3.5rem;
+  /* Adjusted font size for second line */
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: orange;
+  /* Highlight color */
+}
+
+.hero-text p {
+  font-size: 1.5rem;
+  margin: 20px 0;
+}
+
+.hero-text .highlight {
+  color: orange;
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* Button */
+.hero-button {
+  padding: 15px 30px;
+  background-color: orange;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s;
+}
+
+.hero-button:hover {
+  background-color: darkorange;
+}
+
+/* Hero Image Section */
+.hero-image-container {
+  position: relative;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image {
+  width: 100%;
+  max-width: 650px;
+  height: auto;
+  border-radius: 55% 45% 60% 40% / 40% 60% 35% 65%;
+  /* Custom organic oval shape */
+  position: relative;
+}
+
+/* Overlay Content on the Image */
+.hero-overlay {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  z-index: 2;
+  /* Ensure content is above the image */
+}
+
+.collaboration-item {
+  background-color: rgba(255, 255, 255, 0.9);
+  /* Semi-transparent background */
+  padding: 10px;
+  border-radius: 10px;
+  width: auto;
+  /* Adjust width */
+  display: inline-flex;
+  /* Align items in a single line */
+  align-items: center;
+  border: 1px solid orange;
+  /* Slim border */
+}
+
+.collaboration-item h3 {
+  font-size: 16px;
+  margin-right: 10px;
+  /* Margin between heading and text */
+  color: orange;
+}
+
+.collaboration-item p {
+  font-size: 14px;
+}
+
+/* Specific positioning for each item */
+.automation {
+  position: absolute;
+  top: -15%;
+  right: 10%;
+}
+
+.collaboration {
+  position: absolute;
+  bottom: 15%;
+  left: 5%;
+}
+
+.engagement {
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+}
+
+.services-section {
+  text-align: center;
+  margin-top: 2rem;
+  background-color: #f0f0f0;
+  /* light grey background */
+  padding: 2rem;
+  padding-bottom: 7rem;
+}
+
+.services-title {
+  font-size: 3rem;
+  /* Increase font size */
+}
+
+.services-gray {
+  color: var(--Gray-700, #344054);
+  font-family: "General Sans";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  /* Gray / 700 */
+}
+
+.services-orange {
+  color: #F58A07;
+  font-family: "General Sans";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.services-subtitle {
+  font-size: 1.25rem;
+  color: #6c757d;
+  /* Secondary text color */
+}
+
+/* Styles for service cards */
+.services-cards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.service-card {
+  background-color: #fff;
+  padding: 3rem;
+  /* Increase padding */
+  border-radius: 8px;
+  text-align: left;
+  width: 320px;
+  /* Increase width */
+  transition: border-color 0.3s ease, transform 0.3s ease;
+  /* Add transition */
+  border: 1px solid transparent;
+  /* Default border */
+}
+
+.service-card:hover {
+  border-color: #ff6600;
+  /* Orange border on hover */
+}
+
+.service-card img {
+  width: 70px;
+  /* Smaller width for images */
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.service-card h3 {
+  color: var(--Black-100, #212121);
+  font-family: "General Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.service-card p {
+  color: #6c757d;
+  /* Secondary text color */
+}
+
+.service-card a {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #ff6600;
+  /* Orange */
+  transition: transform 0.3s ease;
+  /* Add transition */
+}
+
+.service-card:hover a {
+  transform: translateX(5px);
+  /* Shift arrow forward on card hover */
+}
+
+/* Styles for our work section */
+.our-work-section {
+  text-align: center;
+  margin-top: 4rem;
+  padding-bottom: 3rem;
+  /* Add top padding */
+}
+
+.our-work-title {
+  font-size: 3rem;
+  /* Increase font size */
+}
+
+.our-work-blue {
+  color: var(--Gray-700, #344054);
+  font-family: "General Sans";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  /* Dark blue color */
+}
+
+.our-work-orange {
+  color: #F58A07;
+  font-family: "General Sans";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.our-work-subtitle {
+  font-size: 1.25rem;
+  color: #6c757d;
+  /* Secondary text color */
+}
+
+/* Styles for our work cards */
+.our-work-cards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.our-work-card {
+  background-color: #fff;
+  border-radius: 8px;
+  text-align: left;
+  width: 380px;
+  /* Increase width */
+  transition: border-color 0.3s ease, transform 0.3s ease;
+  /* Add transition */
+  border: 1px solid transparent;
+  /* Default border */
+  padding: 0;
+  /* Remove padding */
+  margin: 0;
+  /* Remove margin */
+}
+
+.our-work-card img {
+  width: 100%;
+  /* Full width for images */
+  border-radius: 8px 8px 0 0;
+  /* Adjust border-radius for top corners */
+  margin-bottom: 0;
+  /* Remove margin */
+  transition: transform 0.3s ease;
+  /* Add transition for hover effect */
+}
+
+.our-work-card:hover img {
+  transform: scale(1.05);
+  /* Zoom out effect on hover */
+}
+
+.our-work-card h3 {
+  color: var(--TechItEasy-Black, #0F0F0F);
+  font-family: "General Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26px;
+  /* 144.444% */
+}
+
+.our-work-card p {
+  color: var(--TechItEasy-Black, #0F0F0F);
+  font-family: "General Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  /* 142.857% */
+}
+
+.our-work-card a {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #ff6600;
+  /* Orange */
+  transition: transform 0.3s ease;
+  /* Add transition */
+  padding: 0 1rem 1rem;
+  /* Add padding */
+}
+
+.our-work-card:hover a {
+  transform: translateX(5px);
+  /* Shift arrow forward on card hover */
+}
+
+/* Adjust testimonial section styles */
+.happy-clients-section {
+  text-align: center;
+  padding-top: 2rem;
+  /* Add top padding */
+  margin-top: 2rem;
+  background-color: #f0f0f0;
+  padding-bottom: 7rem;
+}
+
+.happy-clients-title {
+  font-size: 3rem;
+  /* Increase font size */
+  margin-bottom: 0.5rem;
+  /* Add some space below the title */
+}
+
+.happy-clients-gray {
+  color: var(--Gray-700, #344054);
+  font-family: "General Sans";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  /* Gray / 700 */
+}
+
+.happy-clients-orange {
+  color: #F58A07;
+  font-family: "General Sans";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.happy-clients-subtitle {
+  font-size: 1.25rem;
+  color: #6c757d;
+  /* Secondary text color */
+  margin-bottom: 2rem;
+  /* Add some space below the subtitle */
+}
+
+.testimonial-section {
+  margin-top: 2rem;
+}
+
+.testimonial-cards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.testimonial-card {
+  background-color: #fff;
+  border-radius: 8px;
+  text-align: left;
+  width: 320px;
+  transition: border-color 0.3s ease, transform 0.3s ease;
+  border: 1px solid transparent;
+  padding: 1rem;
+  /* Add padding inside card */
+  margin: 0;
+  /* Remove card margin */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Add shadow */
+}
+
+
+.testimonial-quote-icon {
+  font-size: 3rem;
+  /* Increase quote icon size */
+  color: #ff6600;
+}
+
+.testimonial-quote {
+  font-size: 1.25rem;
+  color: #344054;
+  /* Dark grey color */
+  margin: 1rem 0;
+}
+
+.testimonial-card-info {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.testimonial-image {
+  border-radius: 50%;
+  width: 60px;
+  /* Increase image size */
+  height: 60px;
+  margin-right: 1rem;
+  /* Add space between image and text */
+}
+
+.testimonial-author {
+  font-weight: 600;
+  color: #212121;
+}
+
+.testimonial-title {
+  color: #6c757d;
+}
+
+/* Styles for the collaboration section */
+.collaboration-section {
+  padding-top: 2rem;
+  text-align: center;
+  margin-top: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.collaboration-title {
+  color: var(--TechItEasy-Black, #0F0F0F);
+  font-family: "General Sans";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 0.5rem; /* Adjust this value to decrease space */
+}
+
+.collaboration-subtitle {
+  color: var(--TechItEasy-Black, #F58A07);
+  font-family: "General Sans";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-top: 0.1rem; /* Ensure there's no margin on top */
+}
+
+
+.collaboration-subtitle1 {
+  color: #64707D; /* Secondary text */
+  font-family: "General Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+.collaboration-input {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.collaboration-input input {
+  padding: 0.75rem;
+  font-size: 1rem;
+  width: 550px; /* Adjust the width of the input field */
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
+  outline: none;
+}
+
+.collaboration-input button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  background-color: #F58A07; /* Orange color */
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.collaboration-input button:hover {
+  background-color: #e67800; /* Darker orange on hover */
+}
+.collaboration-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 8rem;
+}
+
+.collaboration-icon {
+  display: flex;
+  align-items: center; /* Align the icon and text vertically */
+   /* Add space between the icon and text */
+}
+
+.collaboration-icon img {
+  width: 30px;
+  height: 30px;
+}
+
+.collaboration-icon-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.collaboration-icon-title {
+  font-size: 1rem;
+  color: #212121; /* Dark color */
+  font-weight: bold;
+}
+
+.collaboration-icon-subtitle {
+  font-size: 0.875rem;
+  color: #6c757d; /* Secondary text color */
+}

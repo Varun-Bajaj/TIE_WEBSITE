@@ -6,6 +6,7 @@ import Solutions from './components/pages/Solutions.js';
 import OurWork from './components/pages/OurWork.js';
 import Resources from './components/pages/Resources.js';
 import AboutUs from './components/pages/AboutUs.js';
+import Footer from './components/Footer' // Import the new Footer component
 
 function App() {
   const [currentPage, setCurrentPage] = useState('home');
@@ -31,6 +32,7 @@ function App() {
     <div>
       <Navbar setCurrentPage={setCurrentPage} />
       {renderPage()}
+      <Footer /> {/* Add the Footer component here */}
     </div>
   );
 }
