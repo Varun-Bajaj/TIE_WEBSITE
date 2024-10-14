@@ -1,0 +1,126 @@
+/* Hero Container */
+.hero-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 100px; /* Add padding for space on both ends */
+    position: relative;
+    background-color: #ffffff;
+    margin: 0 50px; /* Add margin for space on both ends */
+    min-height: 70vh;
+  }
+  
+  /* Hero Text Section */
+  .hero-text {
+    flex: 1;
+    padding-right: 50px;
+  }
+  
+  .hero-text h1 {
+    font-size: 3.5rem; /* Increase font size for visibility */
+    margin: 0;
+    line-height: 1.2;
+  }
+  
+  .hero-text h2 {
+    font-size: 3.5rem; /* Adjusted font size for second line */
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: orange; /* Highlight color */
+  }
+  
+  .hero-text p {
+    font-size: 1.5rem;
+    margin: 20px 0;
+  }
+  
+  .hero-text .highlight {
+    color: orange;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  /* Button */
+  .hero-button {
+    padding: 15px 30px;
+    background-color: orange;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s;
+  }
+  
+  .hero-button:hover {
+    background-color: darkorange;
+  }
+  
+  /* Hero Image Section */
+  .hero-image-container {
+    position: relative;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hero-image {
+    width: 100%;
+    max-width: 650px;
+    height: auto;
+    border-radius: 55% 45% 60% 40% / 40% 60% 35% 65%; /* Custom organic oval shape */
+    position: relative;
+  }
+  
+  /* Overlay Content on the Image */
+  .hero-overlay {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    z-index: 2; /* Ensure content is above the image */
+  }
+  
+  .collaboration-item {
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+    padding: 10px;
+    border-radius: 10px;
+    width: auto; /* Adjust width */
+    display: inline-flex; /* Align items in a single line */
+    align-items: center;
+    border: 1px solid orange; /* Slim border */
+  }
+  
+  .collaboration-item h3 {
+    font-size: 16px;
+    margin-right: 10px; /* Margin between heading and text */
+    color: orange;
+  }
+  
+  .collaboration-item p {
+    font-size: 14px;
+  }
+  
+  /* Specific positioning for each item */
+  .automation {
+    position: absolute;
+    top: -15%;
+    right: 10%;
+  }
+  
+  .collaboration {
+    position: absolute;
+    bottom: 15%;
+    left: 5%;
+  }
+  
+  .engagement {
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+  }
+  
