@@ -8,9 +8,7 @@ import cardImg1 from "../../Images/card1.png";
 import cardImg2 from "../../Images/card1.png";
 import cardImg3 from "../../Images/card1.png";
 import clientImg1 from "../../Images/clientImg1.png";
-import star from "../../Images/star.png";
-import hand from "../../Images/hands.png";
-import mark from "../../Images/mark.png";
+
 
 const Hero = () => {
   const texts = useMemo(
@@ -242,50 +240,6 @@ const Hero = () => {
                     Co-Founder of ABC company
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="collaboration-section">
-        <h2 className="collaboration-title">
-          Want to collaborate on something great?
-        </h2>
-        <h3 className="collaboration-subtitle">Let's Shake Hands</h3>
-        <p className="collaboration-subtitle1">
-          We'll use this email to reach out to you.
-        </p>
-
-        <div className="collaboration-input">
-          <input type="email" placeholder="Enter your email address" />
-          <button type="submit">Get Started</button>
-        </div>
-
-        <div className="collaboration-icons">
-          <div className="collaboration-icon">
-            <img src={star} alt="Average Ratings" />
-            <div className="collaboration-icon-text">
-              <div className="collaboration-icon-title">4.9/5</div>
-              <div className="collaboration-icon-subtitle">Average Ratings</div>
-            </div>
-          </div>
-
-          <div className="collaboration-icon">
-            <img src={hand} alt="Successful Handshakes" />
-            <div className="collaboration-icon-text">
-              <div className="collaboration-icon-title">8+</div>
-              <div className="collaboration-icon-subtitle">
-                Successful Handshakes
-              </div>
-            </div>
-          </div>
-
-          <div className="collaboration-icon">
-            <img src={mark} alt="Trusted By" />
-            <div className="collaboration-icon-text">
-              <div className="collaboration-icon-title">Trusted By</div>
-              <div className="collaboration-icon-subtitle">
-                Local Businesses
               </div>
             </div>
           </div>
