@@ -3,166 +3,168 @@
     color: #fff;
     /* padding: 20px; */
     text-align: center;
-  }
-  
-  .collaboration-section {
+}
+
+
+.footer-logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-logo {
     margin-bottom: 20px;
-  }
-  
-  .collaboration-title {
+}
+
+.footer-logo img {
+    width: 100px;
+    height: 100px;
+    border-radius: 30px;
+}
+
+.footer-company-name {
     font-size: 24px;
     margin-bottom: 10px;
-  }
-  
-  .collaboration-subtitle {
+}
+
+.footer-tagline {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-description {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.footer-social-media {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-social-media img {
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+}
+
+.collaboration-section {
+    margin-bottom: 20px;
+}
+
+.collaboration-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.collaboration-subtitle {
     font-size: 18px;
     margin-bottom: 5px;
-  }
-  
-  .collaboration-subtitle1 {
+}
+
+.collaboration-subtitle1 {
     font-size: 14px;
     margin-bottom: 10px;
-  }
-  
-  .collaboration-input {
+}
+
+.collaboration-input {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  
-  .collaboration-input input {
+}
+
+.collaboration-input input {
     padding: 10px;
     border: none;
     border-radius: 5px;
     width: 200px;
-  }
-  
-  .collaboration-input button {
+}
+
+.collaboration-input button {
     padding: 10px 20px;
     background-color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-  }
-  
-  .collaboration-icons {
+}
+
+.collaboration-icons {
     display: flex;
     justify-content: center;
     margin-top: 20px;
-  }
-  
-  .collaboration-icon {
+}
+
+.collaboration-icon {
     margin: 0 10px;
-  }
-  
-  .collaboration-icon-text {
+}
+
+.collaboration-icon-text {
     text-align: center;
-  }
-  
-  .collaboration-icon-title {
+}
+
+.collaboration-icon-title {
     font-size: 18px;
     font-weight: bold;
-  }
-  
-  .collaboration-icon-subtitle {
+}
+
+.collaboration-icon-subtitle {
     font-size: 14px;
-  }
-  
-  .footer-logo-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .footer-logo {
-    margin-bottom: 20px;
-  }
-  
-  .footer-logo img {
-    width: 100px;
-    height: 100px;
-  }
-  
-  .footer-company-name {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  
-  .footer-tagline {
-    font-size: 18px;
-    margin-bottom: 10px;
-  }
-  
-  .footer-description {
-    font-size: 14px;
-    margin-bottom: 20px;
-  }
-  
-  .footer-social-media {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .footer-social-media img {
-    width: 30px;
-    height: 30px;
-    margin: 0 5px;
-  }
-  
-  .footer-nav {
+}
+
+.footer-nav {
     margin-top: 20px;
-  }
-  
-  .footer-nav-heading {
+}
+
+.footer-nav-heading {
     font-size: 18px;
     margin-bottom: 10px;
-  }
-  
-  .footer-nav a {
+}
+
+.footer-nav a {
     display: block;
     margin-bottom: 5px;
     color: #fff;
     text-decoration: none;
-  }
-  
-  .footer-contact {
+}
+
+.footer-contact {
     margin-top: 20px;
-  }
-  
-  .footer-newsletter {
+}
+
+.footer-newsletter {
     margin-top: 20px;
-  }
-  
-  .newsletter-form {
+}
+
+.newsletter-form {
     display: flex;
     justify-content: center;
-  }
-  
-  .newsletter-form input {
+}
+
+.newsletter-form input {
     padding: 10px;
     border: none;
     border-radius: 5px;
     width: 200px;
-  }
-  
-  .newsletter-form button {
+}
+
+.newsletter-form button {
     padding: 10px 20px;
     background-color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-  }
-  
-  .footer-legal {
+}
+
+.footer-legal {
     margin-top: 20px;
-  }
-  
-  .footer-legal p {
+}
+
+.footer-legal p {
     margin-bottom: 5px;
-  }
- 
-  .collaboration-section {
-    padding-top: 2rem;
+}
+
+.collaboration-section {
+    padding-top: 3rem;
     text-align: center;
     margin-top: 2rem;
     max-width: 100%;
@@ -170,7 +172,7 @@
     background: #ffffff;
     margin-bottom: 3rem;
     /* Add this line for space between collaboration and footer */
-    padding-bottom: 2%;
+    padding-bottom: 8%;
 }
 
 

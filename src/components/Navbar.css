@@ -8,7 +8,7 @@
   align-items: center;
   padding: 20px 40px;
   background-color: #ffffff; /* Light background color */
-  width: 95%;
+  width: 95%; /* Full width initially */
   transition: all 0.3s ease; /* Smooth transition for scroll effect */
 }
 
@@ -47,18 +47,32 @@
   gap: 30px;
   margin: 0;
   padding: 0;
+  align-items: center; /* Ensure links are aligned */
 }
 
 .navbar-links li {
   display: inline-block;
+  padding: 10px; /* Add padding for clickable area */
 }
 
-.navbar-links a {
+/* Link Styling */
+.navbar-links a,
+.navbar-links button {
   color: #000; /* Default link color */
   font-size: 16px;
   text-decoration: none;
   padding: 8px 12px;
   transition: color 0.3s ease; /* Smooth transition on hover */
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.navbar-links a:hover,
+.navbar-links button:hover {
+  color: #ff9900; /* Change color on hover */
+  border-radius: 5px;
+  background-color: #f1f1f1; /* Add light background on hover */
 }
 
 /* Dropdown Styles */
@@ -118,7 +132,6 @@
   display: block; /* Show the dropdown when active */
 }
 
-
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .navbar {
@@ -127,32 +140,35 @@
   .navbar-links {
     gap: 15px; /* Reduce spacing between links on smaller screens */
   }
-  .navbar-links a {
+  .navbar-links li {
     font-size: 14px; /* Reduce link font size */
   }
 }
 
 /* Highlight the active link */
-.navbar-links a.active {
+.navbar-links li.active {
   color: #ff9900; /* Orange color for the active link */
 }
 
 /* Navbar Shrink Effect (when scrolled) */
+/* Navbar Shrink Effect (when scrolled) */
 .navbar.shrink {
-  background-color: #fff; /* White background when scrolled */
+  background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+  backdrop-filter: blur(10px); /* Blur effect */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
   padding: 10px 20px; /* Reduce padding for a compact look */
-  width: 60%; /* Shrink width */
-  margin: 10px auto; /* Center the navbar */
+  width: 70%; /* Shrink width */
+  margin: 20px auto; /* Center the navbar */
   border-radius: 50px; /* Apply rounded corners */
   transition: all 0.3s ease; /* Smooth transition for shrinking effect */
-  transform: translateY(20px); /* Move navbar down */
+  transform: translateY(20px);
 }
 
 .navbar.shrink .logo {
-  height: 30px; /* Shrink the logo size */
+  height: 40px; /* Shrink the logo size */
 }
 
-.navbar.shrink .navbar-links a {
+.navbar.shrink .navbar-links li {
   color: #000; /* Link color remains the same on scroll */
 }
+
