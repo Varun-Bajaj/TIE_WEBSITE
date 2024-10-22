@@ -6,8 +6,9 @@ import Solutions from './components/pages/Solutions.js';
 import OurWork from './components/pages/OurWork.js';
 import Resources from './components/pages/Resources.js';
 import AboutUs from './components/pages/AboutUs.js';
-import Blogs from './components/pages/Blogs.js'; // Import Blogs component
-import Footer from './components/Footer.js'; // Import Footer component
+import Blogs from './components/pages/Blogs.js'; 
+import PostPage from './components/pages/postpage1.js'; // Import the correct component
+import Footer from './components/Footer.js'; 
 
 function App() {
   const [currentPage, setCurrentPage] = useState(window.location.pathname);
@@ -39,8 +40,10 @@ function App() {
         return <Resources />;
       case '/aboutus':
         return <AboutUs />;
-      case '/blogs':  // Add case for blogs page
-        return <Blogs />;
+      case '/blogs':
+        return <Blogs navigate={navigate} />; // Pass navigate to Blogs
+      case '/postpage1': // Ensure this route is correct
+        return <PostPage />; // Make sure you render PostPage here
       default:
         return <Home />;
     }

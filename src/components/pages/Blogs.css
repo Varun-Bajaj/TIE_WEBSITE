@@ -172,6 +172,8 @@
   display: flex;
   align-items: center;
   transition: color 0.3s ease;
+  border: none;
+  background-color: #F7F7F7;
 }
 
 .learn-more span {

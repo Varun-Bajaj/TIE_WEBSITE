@@ -166,6 +166,7 @@
 
 .navbar.shrink .logo {
   height: 40px; /* Shrink the logo size */
+  border-radius: 10px;
 }
 
 .navbar.shrink .navbar-links li {

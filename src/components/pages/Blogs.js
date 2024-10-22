@@ -1,15 +1,22 @@
 import React from "react";
 import "./Blogs.css";
-import blogImage from "../../Images/blogimg.png"; // Ensure the path is correct
+import blogImage from "../../Images/blogimg.png"; 
 import post from "../../Images/post.png";
 
-const Blogs = () => {
+const Blogs = ({ navigate }) => {
+  // Function to handle navigation to postpage1
+  const handleNavigateToPostPage = () => {
+    navigate("/postpage1"); // Navigate to postpage1 when Learn More is clicked
+  };
+
   return (
     <div className="blogs-container">
       <div className="featured-article">
         <div className="article-content">
           <h2>Featured Article</h2>
-          <h3>New resources to help you get work <span>Faster</span></h3>
+          <h3>
+            New resources to help you get work <span>Faster</span>
+          </h3>
           <p>
             Over the past few months, we've added several new features to our
             solutions to help any business get paid faster and streamline their
@@ -23,7 +30,10 @@ const Blogs = () => {
           <img src={blogImage} alt="People working in an office" />
         </div>
       </div>
-      <h2 className="all-posts-title">All <span>Posts</span></h2>
+
+      <h2 className="all-posts-title">
+        All <span>Posts</span>
+      </h2>
       <div className="blog-grid">
         {[...Array(6)].map((_, index) => (
           <div className="blog-card" key={index}>
@@ -34,9 +44,13 @@ const Blogs = () => {
                 From streamlining tasks to creating personalized customer
                 interactions, we help you make your operations smoother...
               </p>
-              <a href="." className="learn-more">
+              {/* Add onClick to Learn More button */}
+              <button
+                className="learn-more"
+                onClick={handleNavigateToPostPage} // Use navigate to go to postpage1
+              >
                 Learn More <span>→</span>
-              </a>
+              </button>
             </div>
           </div>
         ))}
