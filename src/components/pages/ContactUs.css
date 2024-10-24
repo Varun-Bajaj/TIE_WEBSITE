@@ -1,0 +1,142 @@
+.contact-us-section {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 50px 0;
+    /* Ensuring enough space around the section */
+}
+
+.contact-title {
+    font-family: "General Sans", sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    color: #000;
+}
+
+.highlight {
+    color: #f58a07;
+    /* Orange highlight for emphasis */
+}
+
+.contact-description {
+    font-family: "General Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #666;
+    max-width: 900px;
+    margin: 0 auto;
+    line-height: 32px;
+    margin-bottom: 50px;
+}
+
+/* Flexbox for main layout of the form and contact info */
+.message-section {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #f8f9fb;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.form-container {
+    width: 65%;
+}
+
+.form-title {
+    font-family: "General Sans", sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.form-subtitle {
+    font-family: "General Sans", sans-serif;
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+
+.input-field {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: "General Sans", sans-serif;
+    font-size: 16px;
+    background-color: white;
+}
+
+.message-box {
+    height: 150px;
+}
+
+.send-button {
+    background-color: #f58a07;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.send-button:hover {
+    background-color: #e57a06;
+}
+
+/* Contact Info Section */
+.contact-info {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    font-family: "General Sans", sans-serif;
+}
+
+.contact-info i {
+    color: #f58a07;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.contact-info .info-text {
+    display: inline-block;
+    font-size: 16px;
+    color: #666;
+}
+
+.icon-image {
+    width: 28px; /* Icon size */
+    height: 28px;
+    object-fit: contain; /* Ensures proper scaling */
+    margin-right: 10px; /* Adds space between icon and text */
+}
+
+.info-text {
+    color: #666;
+    font-size: 14px;
+}
+
+/* Ensure responsiveness for mobile */
+@media screen and (max-width: 768px) {
+    .message-section {
+        flex-direction: column;
+        padding: 20px;
+    }
+    .form-container, .contact-info {
+        width: 100%;
+    }
+}

@@ -8,6 +8,7 @@ import Resources from './components/pages/Resources.js';
 import AboutUs from './components/pages/AboutUs.js';
 import Blogs from './components/pages/Blogs.js'; 
 import PostPage from './components/pages/postpage1.js'; // Import the correct component
+import ContactUs from './components/pages/ContactUs.js';
 import Footer from './components/Footer.js'; 
 
 function App() {
@@ -44,6 +45,8 @@ function App() {
         return <Blogs navigate={navigate} />; // Pass navigate to Blogs
       case '/postpage1': // Ensure this route is correct
         return <PostPage />; // Make sure you render PostPage here
+      case '/contactus':
+        return <ContactUs />;
       default:
         return <Home />;
     }
