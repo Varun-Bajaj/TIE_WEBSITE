@@ -10,6 +10,7 @@ import Blogs from './components/pages/Blogs.js';
 import PostPage from './components/pages/postpage1.js'; // Import the correct component
 import ContactUs from './components/pages/ContactUs.js';
 import Footer from './components/Footer.js'; 
+import SaralTransport from  './components/pages/SaralTransport.js';
 
 function App() {
   const [currentPage, setCurrentPage] = useState(window.location.pathname);
@@ -47,6 +48,8 @@ function App() {
         return <PostPage />; // Make sure you render PostPage here
       case '/contactus':
         return <ContactUs />;
+      case '/saraltransport':
+        return  <SaralTransport />;
       default:
         return <Home />;
     }

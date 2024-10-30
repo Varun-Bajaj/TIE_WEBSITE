@@ -52,7 +52,7 @@ const Navbar = ({ navigate }) => {
           </button>
           <ul className="dropdown-menu">
             <li><button onClick={() => navigate('/solutions')}>Saral eWay</button></li>
-            <li><button onClick={() => navigate('/solutions')}>Saral Transport</button></li>
+            <li><button onClick={() => navigate('/saraltransport')}>Saral Transport</button></li>
           </ul>
         </li>
         <li><button onClick={() => navigate('/ourwork')}>Our Work</button></li>
