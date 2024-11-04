@@ -1,0 +1,218 @@
+.saral-eway-container {
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+.saral-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #000;
+}
+
+.saral-subtitle {
+    font-size: 1.1rem;
+    color: #777;
+}
+
+/* Trusted By Section */
+.trusted-by-section {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    /* Align items to the start */
+    padding: 5%;
+    gap: 250px;
+}
+
+.trusted-title {
+    font-family: "General Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21.6px;
+    letter-spacing: -0.22px;
+    color: #64707D;
+    /* margin-right: auto; Pushes title to the far right */
+    /* white-space: nowrap; Prevent the title from breaking into multiple lines */
+}
+
+.logo-grid {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    /* Space between logos */
+}
+
+.trusted-logo {
+    height: 20px;
+    /* Set consistent height for logos */
+    width: auto;
+}
+
+.platform-usage-section {
+    background-color: #f9f9f9;
+    padding: 80px;
+    border-radius: 8px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.platform-usage-content {
+    text-align: left;
+    max-width: 60%;
+    padding-left: 10%;
+}
+
+.platform-usage-title {
+    margin-bottom: 10px;
+    font-family: General Sans;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 46px;
+    letter-spacing: -0.5px;
+    text-align: left;
+
+}
+
+.platform-usage-description {
+    font-family: "General Sans", sans-serif;
+    font-size: 16px;
+    color: #64707D;
+}
+
+.platform-rating-section {
+    display: flex;
+    justify-content: flex-end;
+    gap: 100px;
+    /* Ensure there's a small gap between rating items */
+    text-align: right;
+    flex: 0;
+    /* Prevent rating section from taking extra space */
+    padding-right: 10%;
+}
+
+.platform-rating-item {
+    text-align: left;
+}
+
+.rating {
+    font-family: General Sans;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 64.8px;
+    letter-spacing: -0.6666666865348816px;
+    text-align: left;
+
+}
+
+.source {
+    font-family: General Sans;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24.3px;
+    letter-spacing: -0.25px;
+    text-align: left;
+    color: #64707D;
+}
+
+.stars {
+    font-size: 30px;
+    /* Large size for stars */
+    color: #FFD700;
+}
+.features-section {
+    margin-top: 80px;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .features-header {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+  }
+  
+  .features-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .features-title .highlight {
+    color: #f7901e;
+  }
+  
+  .features-description {
+    color: #666;
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+  }
+  
+  .features-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px;
+    max-width: 100%;
+    margin-top: 20px;
+  }
+  
+  .feature-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 270px;
+  }
+  
+  .feature-icon {
+    font-size: 45px;
+    margin-bottom: 20px;
+  }
+  
+  .feature-content h3 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .feature-content p {
+    color: #666;
+    font-size: 17px;
+    line-height: 1.5;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 1200px) {
+    .features-grid {
+      gap: 30px;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .features-grid {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    
+    .feature-item {
+      flex: 0 0 calc(50% - 30px);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .features-title {
+      font-size: 28px;
+    }
+    
+    .feature-item {
+      flex: 0 0 100%;
+    }
+  }
+  

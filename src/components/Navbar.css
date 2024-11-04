@@ -1,43 +1,56 @@
 /* Default Navbar (before scroll) */
 .navbar {
-  position: sticky; /* Sticks the navbar to the top */
+  position: sticky;
+  /* Sticks the navbar to the top */
   top: 0;
   z-index: 1000;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 40px;
-  background-color: #ffffff; /* Light background color */
-  width: 95%; /* Full width initially */
-  transition: all 0.3s ease; /* Smooth transition for scroll effect */
+  background-color: #ffffff;
+  /* Light background color */
+  width: 95%;
+  /* Full width initially */
+  transition: all 0.3s ease;
+  /* Smooth transition for scroll effect */
 }
 
 /* Brand Logo and Info */
 .navbar-brand {
   display: flex;
-  align-items: center; /* Center the logo and text vertically */
+  align-items: center;
+  /* Center the logo and text vertically */
 }
 
 .brand-info {
-  margin-left: 15px; /* Add space between logo and text */
+  margin-left: 15px;
+  /* Add space between logo and text */
   display: flex;
-  flex-direction: column; /* Stack the name and tagline */
+  flex-direction: column;
+  /* Stack the name and tagline */
 }
 
 .navbar-brand-text {
-  font-size: 20px; /* Company name size */
-  font-weight: bold; /* Bold for emphasis */
+  font-size: 20px;
+  /* Company name size */
+  font-weight: bold;
+  /* Bold for emphasis */
 }
 
 .navbar-tagline {
-  font-size: 14px; /* Tagline size */
-  color: #888; /* Lighter color for tagline */
+  font-size: 14px;
+  /* Tagline size */
+  color: #888;
+  /* Lighter color for tagline */
 }
 
 /* Logo */
 .logo {
-  height: 60px; /* Initial logo height */
-  transition: all 0.3s ease; /* Smooth transition for logo resizing */
+  height: 60px;
+  /* Initial logo height */
+  transition: all 0.3s ease;
+  /* Smooth transition for logo resizing */
 }
 
 /* Navbar Links */
@@ -47,22 +60,26 @@
   gap: 30px;
   margin: 0;
   padding: 0;
-  align-items: center; /* Ensure links are aligned */
+  align-items: center;
+  /* Ensure links are aligned */
 }
 
 .navbar-links li {
   display: inline-block;
-  padding: 10px; /* Add padding for clickable area */
+  padding: 10px;
+  /* Add padding for clickable area */
 }
 
 /* Link Styling */
 .navbar-links a,
 .navbar-links button {
-  color: #000; /* Default link color */
+  color: #000;
+  /* Default link color */
   font-size: 16px;
   text-decoration: none;
   padding: 8px 12px;
-  transition: color 0.3s ease; /* Smooth transition on hover */
+  transition: color 0.3s ease;
+  /* Smooth transition on hover */
   background: none;
   border: none;
   cursor: pointer;
@@ -70,20 +87,23 @@
 
 .navbar-links a:hover,
 .navbar-links button:hover {
-  color: #ff9900; /* Change color on hover */
+  color: #ff9900;
+  /* Change color on hover */
   border-radius: 5px;
-  background-color: #f1f1f1; /* Add light background on hover */
+  background-color: #f1f1f1;
+  /* Add light background on hover */
 }
 
 /* Dropdown Styles */
 .dropdown {
-  position: relative; /* Ensure dropdown is positioned relative to its parent */
+  position: relative;
+  /* Ensure dropdown is positioned relative to its parent */
 }
 
 .dropdown button {
   background: none;
   border: none;
-  color: #333;
+  color: #000000;
   font-size: 16px;
   cursor: pointer;
   padding: 8px 12px;
@@ -92,9 +112,12 @@
 
 /* Dropdown Menu */
 .dropdown-menu {
-  display: none; /* Hide by default */
-  position: absolute; /* Position the dropdown menu */
-  top: 100%; /* Place it below the button */
+  display: none;
+  /* Hide by default */
+  position: absolute;
+  /* Position the dropdown menu */
+  top: 100%;
+  /* Place it below the button */
   left: 0;
   background-color: #fff;
   border: 1px solid #ddd;
@@ -104,7 +127,8 @@
   padding: 10px;
   margin: 0;
   min-width: 160px;
-  z-index: 1000; /* Ensure it appears above other elements */
+  z-index: 1000;
+  /* Ensure it appears above other elements */
 }
 
 .dropdown-menu li {
@@ -114,22 +138,25 @@
 .dropdown-menu button {
   background: none;
   border: none;
-  color: #333;
+  color: #000000;
   font-size: 14px;
   cursor: pointer;
   padding: 8px 12px;
   width: 100%;
   text-align: left;
-  transition: background-color 0.3s ease; /* Smooth transition on hover */
+  transition: background-color 0.3s ease;
+  /* Smooth transition on hover */
 }
 
 .dropdown-menu button:hover {
-  background-color: #f1f1f1; /* Highlight background on hover */
+  background-color: #f1f1f1;
+  /* Highlight background on hover */
 }
 
 /* Show dropdown on click */
 .dropdown.active .dropdown-menu {
-  display: block; /* Show the dropdown when active */
+  display: block;
+  /* Show the dropdown when active */
 }
 
 /* Responsive adjustments */
@@ -137,39 +164,53 @@
   .navbar {
     padding: 10px 20px;
   }
+
   .navbar-links {
-    gap: 15px; /* Reduce spacing between links on smaller screens */
+    gap: 15px;
+    /* Reduce spacing between links on smaller screens */
   }
+
   .navbar-links li {
-    font-size: 14px; /* Reduce link font size */
+    font-size: 14px;
+    /* Reduce link font size */
   }
 }
 
 /* Highlight the active link */
 .navbar-links li.active {
-  color: #ff9900; /* Orange color for the active link */
+  color: #ff9900;
+  /* Orange color for the active link */
 }
 
 /* Navbar Shrink Effect (when scrolled) */
 /* Navbar Shrink Effect (when scrolled) */
 .navbar.shrink {
-  background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
-  backdrop-filter: blur(10px); /* Blur effect */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
-  padding: 10px 20px; /* Reduce padding for a compact look */
-  width: 70%; /* Shrink width */
-  margin: 20px auto; /* Center the navbar */
-  border-radius: 50px; /* Apply rounded corners */
-  transition: all 0.3s ease; /* Smooth transition for shrinking effect */
+  background: rgba(255, 255, 255, 0.1);
+  /* Semi-transparent background */
+  backdrop-filter: blur(10px);
+  /* Blur effect */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  /* Add subtle shadow */
+  padding: 10px 20px;
+  /* Reduce padding for a compact look */
+  width: 70%;
+  /* Shrink width */
+  margin: 20px auto;
+  /* Center the navbar */
+  border-radius: 50px;
+  /* Apply rounded corners */
+  transition: all 0.3s ease;
+  /* Smooth transition for shrinking effect */
   transform: translateY(20px);
 }
 
 .navbar.shrink .logo {
-  height: 40px; /* Shrink the logo size */
+  height: 40px;
+  /* Shrink the logo size */
   border-radius: 10px;
 }
 
 .navbar.shrink .navbar-links li {
-  color: #000; /* Link color remains the same on scroll */
+  color: #000;
+  /* Link color remains the same on scroll */
 }
-

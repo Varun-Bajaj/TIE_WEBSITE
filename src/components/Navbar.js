@@ -51,7 +51,7 @@ const Navbar = ({ navigate }) => {
             Solutions {isSolutionsDropdownOpen ? '▲' : '▼'}
           </button>
           <ul className="dropdown-menu">
-            <li><button onClick={() => navigate('/solutions')}>Saral eWay</button></li>
+            <li><button onClick={() => navigate('/saraleway')}>Saral eWay</button></li>
             <li><button onClick={() => navigate('/saraltransport')}>Saral Transport</button></li>
           </ul>
         </li>

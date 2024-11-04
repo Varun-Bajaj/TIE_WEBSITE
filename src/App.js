@@ -11,6 +11,8 @@ import PostPage from './components/pages/postpage1.js'; // Import the correct co
 import ContactUs from './components/pages/ContactUs.js';
 import Footer from './components/Footer.js'; 
 import SaralTransport from  './components/pages/SaralTransport.js';
+import SaralEway from './components/pages/SaralEway.js';
+import OtherProducts from './components/pages/Other_Products.js';
 
 function App() {
   const [currentPage, setCurrentPage] = useState(window.location.pathname);
@@ -50,6 +52,10 @@ function App() {
         return <ContactUs />;
       case '/saraltransport':
         return  <SaralTransport />;
+      case '/saraleway':
+        return <SaralEway />;
+      case '/otherproducts':
+        return <OtherProducts />;
       default:
         return <Home />;
     }

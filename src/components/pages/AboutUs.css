@@ -90,7 +90,8 @@
 }
 
 .testimonial-container img {
-    max-width: 500px; /* Max width to ensure it doesn't get too large */
+    max-width: 500px; /* Increased from 800px */
+    width: 100%;      /* Added to ensure responsive behavior */
     height: auto;
 }
 
