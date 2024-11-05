@@ -123,96 +123,356 @@
     /* Large size for stars */
     color: #FFD700;
 }
+
 .features-section {
     margin-top: 80px;
     padding: 0 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  
-  .features-header {
+}
+
+.features-header {
     text-align: center;
     max-width: 800px;
     margin: 0 auto 40px auto;
-  }
-  
-  .features-title {
+}
+
+.features-title {
     font-size: 36px;
     font-weight: bold;
     margin-bottom: 20px;
-  }
-  
-  .features-title .highlight {
+}
+
+.features-title .highlight {
     color: #f7901e;
-  }
-  
-  .features-description {
+}
+
+.features-description {
     color: #666;
     font-size: 20px;
     line-height: 1.6;
     margin-bottom: 40px;
-  }
-  
-  .features-grid {
+}
+
+.features-grid {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 60px;
+    gap: 10px;
     max-width: 100%;
     margin-top: 20px;
-  }
-  
-  .feature-item {
+}
+
+.feature-item {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     max-width: 270px;
-  }
-  
-  .feature-icon {
+    position: relative;
+    /* Added for line positioning */
+}
+
+.feature-icon {
     font-size: 45px;
     margin-bottom: 20px;
-  }
-  
-  .feature-content h3 {
+    padding-bottom: 20px;
+    /* Added space for line */
+    position: relative;
+    /* Added for line positioning */
+    color: #000;
+}
+
+/* Added line after icon */
+.feature-icon:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    /* Width of the line */
+    height: 0.08%;
+    background-color: #4a4a4a;
+    /* Color matching the highlight */
+}
+
+.feature-content h3 {
     font-size: 22px;
     font-weight: bold;
     margin-bottom: 10px;
-  }
-  
-  .feature-content p {
+}
+
+.feature-content p {
     color: #666;
     font-size: 17px;
     line-height: 1.5;
-  }
-  
-  /* Responsive design */
-  @media (max-width: 1200px) {
+}
+
+/* Responsive design */
+@media (max-width: 1200px) {
     .features-grid {
-      gap: 30px;
+        gap: 30px;
     }
-  }
-  
-  @media (max-width: 992px) {
+}
+
+@media (max-width: 992px) {
     .features-grid {
-      flex-wrap: wrap;
-      justify-content: center;
+        flex-wrap: wrap;
+        justify-content: center;
     }
-    
+
     .feature-item {
-      flex: 0 0 calc(50% - 30px);
+        flex: 0 0 calc(50% - 30px);
     }
-  }
-  
-  @media (max-width: 480px) {
+}
+
+@media (max-width: 480px) {
     .features-title {
-      font-size: 28px;
+        font-size: 28px;
     }
-    
+
     .feature-item {
-      flex: 0 0 100%;
+        flex: 0 0 100%;
     }
-  }
-  
+}
+
+.testimonial-section {
+    /* display: flex; */
+    /* justify-content: center; */
+    /* margin-top: 60px; */
+    padding: 60px;
+    padding-left: 8%;
+}
+
+.testimonial-container {
+    display: flex;
+    gap: 40px;
+    max-width: 1200px;
+    align-items: center;
+}
+
+.testimonial-image {
+    width: 50%;
+    max-width: 500px;
+    height: 20%;
+    border-radius: 8px;
+}
+
+.testimonial-content {
+    flex: 1;
+}
+
+.testimonial-stats {
+    color: #f7901e;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.testimonial-quote {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.4;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.testimonial-description {
+    color: #666;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.testimonial-features {
+    display: flex;
+    gap: 100px;
+    /* Space between each feature */
+    /* justify-content: center; Center align if needed */
+}
+
+.testimonial-feature {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; Center the icon and text */
+    text-align: center;
+    /* Center-align content below the icon */
+    max-width: 500px;
+    /* Set a width for consistent layout */
+}
+
+.feature-icon1 {
+    font-size: 32px;
+    /* Icon size */
+    color: #f7901e;
+    /* Adjust color if needed */
+    margin-bottom: 10px;
+    /* Space between icon and content */
+    text-align: left;
+}
+
+.feature-content h3 {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0;
+    text-align: left;
+    max-width: 500px;
+    /* Set a width for consistent layout */
+}
+
+.feature-content p {
+    color: #666;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-top: 5px;
+    text-align: left;
+    max-width: 500px;
+    /* Set a width for consistent layout */
+}
+
+.testimonial-metrics {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.metric-item {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.metric-item h3 {
+    color: #f7901e;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.metric-item p {
+    color: #666;
+    font-size: 14px;
+    margin: 0;
+}
+
+
+.testimonial-image {
+    width: 350px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.testimonial-features {
+    display: flex;
+    gap: 5rem;
+    /* Spacing between columns */
+}
+
+.testimonial-features ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    /* Spacing between each feature item */
+}
+
+.testimonial-features li {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    color: #333;
+    /* Adjust font color if needed */
+}
+
+.testimonial-features li::before {
+    content: "\2713";
+    /* HTML entity for a check mark */
+    color: orange;
+    /* This will apply orange color to the tick mark */
+    margin-right: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    /* Makes the check mark stand out */
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 600px) {
+    .testimonial-features {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+.other-products-section {
+    padding: 80px 20px;
+    background-color: #f8f8f8;
+}
+
+.other-products-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.orange-text {
+    color: #FF6B00;
+}
+
+.other-products-container {
+    display: flex;
+    justify-content: left;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.product-card {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-image {
+    width: 300px;
+    height: 200px;
+    /* border-top-left-radius: 8px; */
+    /* border-bottom-left-radius: 8px; */
+}
+
+.product-content {
+    flex: 1;
+    padding: 30px;
+    text-align: left;
+}
+
+.product-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.product-description {
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.learn-more {
+    color: #FF6B00;
+    text-decoration: none;
+    font-weight: 500;
+    display: inline-block;
+}
+
+.learn-more:hover {
+    text-decoration: underline;
+}

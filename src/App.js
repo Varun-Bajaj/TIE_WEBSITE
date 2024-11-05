@@ -7,12 +7,13 @@ import OurWork from './components/pages/OurWork.js';
 import Resources from './components/pages/Resources.js';
 import AboutUs from './components/pages/AboutUs.js';
 import Blogs from './components/pages/Blogs.js'; 
-import PostPage from './components/pages/postpage1.js'; // Import the correct component
+import PostPage from './components/pages/postpage1.js';
 import ContactUs from './components/pages/ContactUs.js';
 import Footer from './components/Footer.js'; 
 import SaralTransport from  './components/pages/SaralTransport.js';
 import SaralEway from './components/pages/SaralEway.js';
 import OtherProducts from './components/pages/Other_Products.js';
+import OtherProductsDetails from  './components/pages/Other_Products_detail.js';
 
 function App() {
   const [currentPage, setCurrentPage] = useState(window.location.pathname);
@@ -56,6 +57,8 @@ function App() {
         return <SaralEway />;
       case '/otherproducts':
         return <OtherProducts />;
+      case '/otherproductsdetails':
+        return  <OtherProductsDetails />;
       default:
         return <Home />;
     }

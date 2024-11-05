@@ -1,0 +1,33 @@
+.other-details-container {
+    text-align: center;
+    background-color: #ffffff;
+    /* padding: 5px; */
+    /* Ensuring enough space around the section */
+}
+
+.other-details-title {
+    font-family: "General Sans", sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    color: #000;
+}
+
+.highlight {
+    color: #f58a07;
+    /* Orange highlight for emphasis */
+}
+
+.other-details-description {
+    font-family: "General Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #666;
+    max-width: 1400px;
+    margin: 0 auto;
+    line-height: 0;
+    margin-bottom: 50px;
+}
+.other-images {
+    max-width: 1400px;
+    width: 1400px;
+}

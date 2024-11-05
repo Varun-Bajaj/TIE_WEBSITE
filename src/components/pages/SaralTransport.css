@@ -83,15 +83,15 @@
     display: flex;
     justify-content: center;
     /* margin-top: 10px; */
-    padding: 40px 0;
+    padding: 20px 0;
     background-color: #ffffff;
 }
 
 .features-box {
     background-color: #f9f9f9;
-    padding: 30px;
+    padding: 10px;
     max-width: 1400px;
-    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     text-align: center;
 }
