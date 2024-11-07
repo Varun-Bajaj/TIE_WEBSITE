@@ -2,7 +2,7 @@
     position: relative;
     text-align: center;
     padding: 80px;
-    background-image: url('D:/RCC/frontend/TIE_WEBSITE/src/Images/ourwork.png');
+    background-image: url('../../Images/ourwork.png');
     background-size: cover;
     background-position: center;
     z-index: 1;
@@ -15,19 +15,23 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.800); /* Overlay for the background image */
+    background-color: rgba(0, 0, 0, 0.800);
+    /* Overlay for the background image */
     z-index: -1;
 }
 
 /* Section title and text colors */
-.our-work-container h1, .section-title, .about-us-content p {
+.our-work-container h1,
+.section-title,
+.about-us-content p {
     color: #F58A07;
     position: relative;
     z-index: 2;
 }
 
 .our-work-content p {
-    color: var(--Pure-White, #FFF); /* White text */
+    color: var(--Pure-White, #FFF);
+    /* White text */
     text-align: center;
     font-family: "General Sans", sans-serif;
     font-size: 20px;
@@ -41,99 +45,126 @@
 /* Container for the entire section */
 .image-content {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr; /* 3 columns for the images */
-    grid-template-rows: auto auto; /* Images on top, text on the bottom */
-    gap: 1rem; /* Space between images */
-    z-index: 2;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto auto;
     position: relative;
-    padding: 5% 10%; /* Adjusts the top padding for spacing */
+    padding: 10%;
+    margin-left: 6%;
 }
 
-/* Individual image containers */
-.image-item1, .image-item2, .image-item3 {
-    width: 100%;
-    position: relative;
-    z-index: 2;
+.left-content {
+    grid-column: 1 / 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    /* gap: 1.5rem; Reduced gap for tighter layout */
 }
 
-/* Adjusting specific heights */
-.image-item1 img, .image-item2 img, .image-item3 img {
-    width: 100%;
-    height: auto;
+
+.text-content1 {
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+    text-align: left;
+    /* z-index: 2; */
+    position: relative;
+}
+
+.right-content {
+    grid-column: 2 / 3;
+    grid-row: 1 / -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-content img {
+    width: 80%;
+    /* Full width to fit the container */
+    height: 90%;
+    max-width: 3000px;
+    /* Optional max width for control */
+    border-radius: 8px;
+    object-fit: cover;
+    padding-right: 50%;
+}
+
+.image-item1 img {
+    width: 80%;
+    height: 300px;
     border-radius: 8px;
     object-fit: cover;
 }
 
-/* Images specific adjustments for design */
 .image-item2 img {
-    height: 100%;
+    width: 60%;
+    height: auto;
+    border-radius: 8px;
+    /* object-fit: cover; */
 }
 
-/* Grid setup to place the text under the first two images */
-.text-content {
-    grid-column: span 2; /* Spans across the first two images */
-    margin-top: 1rem;
+.text-content1 h2 {
+    color: #000000;
+    margin-bottom: 1rem;
+    font-family: General Sans;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 48.6px;
     text-align: left;
-    z-index: 2;
-    position: relative;
+
 }
 
-/* Styling the heading and paragraph */
-.text-content h2 {
-    font-size: 28px;
-    font-weight: bold;
-    color: #F58A07; /* Same title color */
-}
-
-.text-content p {
+.text-content1 p {
     font-size: 16px;
     line-height: 1.6;
-    color: var(--Pure-White, #FFF); /* Same white text */
+    color: var(--Pure-White, #000000);
+    padding-right: 10%;
+}
+.new-section {
+    display: flex;
+    /* align-items: flex-start; */
+    /* gap: 1rem; */
+    padding: 2%;
+    margin-top: 2rem;
 }
 
-/* For the third image, aligning it properly */
-.image-item3 {
-    grid-row: 1 / span 2; /* Span across both rows to maintain position */
-    margin-top: auto; /* Aligns image to the grid height */
+.new-left-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
 }
 
-/* Overall section and background styling */
-.our-work-container {
-    position: relative;
-    text-align: center;
-    padding: 80px;
-    background-image: url('D:/RCC/frontend/TIE_WEBSITE/src/Images/ourwork.png');
-    background-size: cover;
-    background-position: center;
-    z-index: 1;
-}
-
-.our-work-container::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
+.new-left-image {
     width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.800); /* Overlay for the background image */
-    z-index: -1;
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+    /* object-fit: cover; */
 }
 
-/* Section title and text colors */
-.our-work-container h1, .section-title, .about-us-content p {
+.new-right-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    /* gap: 1rem; */
+}
+
+.new-text-content h2 {
+    font-size: 28px;
+    font-weight: bold;
     color: #F58A07;
-    position: relative;
-    z-index: 2;
 }
 
-.our-work-content p {
-    color: var(--Pure-White, #FFF); /* White text */
-    text-align: center;
-    font-family: "General Sans", sans-serif;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 32px;
-    z-index: 2;
-    position: relative;
+.new-text-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.new-right-image img {
+    width: 100%;
+    max-width: 700px;
+    height: 110%;
+    border-radius: 8px;
+    /* object-fit: cover; */
+    margin-top: 1rem;
 }
