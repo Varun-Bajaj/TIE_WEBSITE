@@ -5,8 +5,7 @@ import truck from "../../Images/truck.png";
 import largeImage from "../../Images/servicesbg.png"; // Replace with your large image path
 import smallImage from "../../Images/containers.png"; // Replace with your small image path
 import why from "../../Images/whychooseus.png";
-import otherproducts from  "../../Images/otherproducts.png";
-
+import otherproducts from "../../Images/otherproducts.png";
 
 const SaralTransport = () => {
   return (
@@ -104,7 +103,7 @@ const SaralTransport = () => {
       <div className="why-choose-us">
         <div className="choose-us-image">
           <div className="image-container">
-            <img src={why} alt="Container Yard" className="large-image1" />
+            <img src={why} alt="Container Yard" className="large-image" />
             <div className="caption">
               <p>Moving your products across borders</p>
             </div>
@@ -151,7 +150,9 @@ const SaralTransport = () => {
         </div>
       </div>
       <div className="other-products-section">
-      <h2 className="other-products-title">See our <span className="orange-text">Other Products</span></h2>
+        <h2 className="other-products-title">
+          See our <span className="orange-text">Other Products</span>
+        </h2>
         <div className="other-products-container">
           <div className="product-card">
             <div className="product-content">
