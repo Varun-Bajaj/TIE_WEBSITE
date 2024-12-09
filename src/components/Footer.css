@@ -49,6 +49,25 @@
     margin: 0 10px;
 }
 
+.collaboration-images-star{
+  height: 30px;
+  width: 30px;
+  margin-bottom: 15px;
+  margin-right: -25px;
+}
+.collaboration-images-handshake{
+  height: 30px;
+  width: 30px;
+  margin-bottom: 15px;
+  margin-right: -55px;
+}
+.collaboration-images-trustedby{
+  height: 30px;
+  width: 30px;
+  margin-bottom: 15px;
+  margin-right: -10px;
+}
+
 .collaboration-icon-text {
     text-align: center;
 }
@@ -94,8 +113,8 @@
   }
   
   .footer-logo {
-    width: 80px; /* Increased size */
-    height: 80px;
+    width: 95px; /* Increased size */
+    height: 95px;
     margin-right: 15px;
     border-radius: 27%;
   }
@@ -140,6 +159,11 @@
   .footer-newsletter {
     max-width: 180px;
     padding-top: 5%;
+  }
+
+  .footer-contact a {
+    text-decoration: none;
+    color: white;
   }
   
   .footer-nav-heading {
@@ -193,7 +217,7 @@
     text-align: center;
     font-size: 0.9em;
     color: #ccc;
-    margin-top: 30px;
+    margin: 15px;
     width: 100%;
   }
   

@@ -28,14 +28,20 @@ const Footer = () => {
         </div>
         <div className="collaboration-icons">
           <div className="collaboration-icon">
-            <img src={star} alt="Average Ratings" />
+            <div className="collaboration-images-star">
+              <img src={star} alt="Average Ratings" />
+            </div>
+            {/* <img src={star} alt="Average Ratings" /> */}
             <div className="collaboration-icon-text">
               <div className="collaboration-icon-title">4.9/5</div>
               <div className="collaboration-icon-subtitle">Average Ratings</div>
             </div>
           </div>
           <div className="collaboration-icon">
-            <img src={hand} alt="Successful Handshakes" />
+            <div className="collaboration-images-handshake">
+              <img src={hand} alt="Successful Handshakes" />
+            </div>
+            {/* <img src={hand} alt="Successful Handshakes" /> */}
             <div className="collaboration-icon-text">
               <div className="collaboration-icon-title">8+</div>
               <div className="collaboration-icon-subtitle">
@@ -44,7 +50,10 @@ const Footer = () => {
             </div>
           </div>
           <div className="collaboration-icon">
-            <img src={mark} alt="Trusted By" />
+            {/* <img src={mark} alt="Trusted By" /> */}
+            <div className="collaboration-images-trustedby">
+              <img src={mark} alt="Trusted By" />
+            </div>
             <div className="collaboration-icon-text">
               <div className="collaboration-icon-title">Trusted By</div>
               <div className="collaboration-icon-subtitle">
@@ -81,16 +90,27 @@ const Footer = () => {
           <div className="footer-nav">
             <h3 className="footer-nav-heading">Navigation</h3>
             <a href=".">Home</a>
-            <a href=".">Solutions</a>
-            <a href=".">Our Work</a>
-            <a href=".">Resources</a>
-            <a href=".">About Us</a>
+            <a href="/saraleway">Solutions</a>
+            <a href="/ourwork">Our Work</a>
+            <a href="/resources">Resources</a>
+            <a href="/aboutus">About Us</a>
           </div>
 
           <div className="footer-contact">
             <h3 className="footer-nav-heading">Contact</h3>
-            <p>+91 9876 543210</p>
-            <p>techiteasy@gmail.com</p>
+            {/* <p>+91 81417 82015</p> */}
+
+            <a
+              href="https://wa.me/918141782015?text=Hi%20there!"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <p>+91 81417 82015</p>
+
+            </a>
+          
+            {/* <p>techiteasy@gmail.com</p> */}
+            <a href="mailto:techiteasy@gmail.com">techiteasy11@gmail.com</a>
             <p>www.techiteasy.com</p>
           </div>
 

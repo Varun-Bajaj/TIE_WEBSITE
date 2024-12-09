@@ -117,8 +117,10 @@ const SaralTransport = () => {
             proposition.
           </p>
           <div className="feature">
-            <i className="fas fa-box feature-icon"></i>
+            {/* <i className="fas fa-box why-feature-icon"></i> */}
             <div className="feature-text">
+              <i className="fas fa-box why-feature-icon"></i>
+
               <h3>Safe Package</h3>
               <p>
                 With a proven track record in port development, project cargo
@@ -128,8 +130,10 @@ const SaralTransport = () => {
             </div>
           </div>
           <div className="feature">
-            <i className="fas fa-shield-alt feature-icon"></i>
+            {/* <i className="fas fa-shield-alt why-feature-icon"></i> */}
             <div className="feature-text">
+              <i className="fas fa-shield-alt why-feature-icon"></i>
+
               <h3>Reliability</h3>
               <p>
                 Your cargo's safety and timely delivery are our top priorities.
@@ -138,8 +142,10 @@ const SaralTransport = () => {
             </div>
           </div>
           <div className="feature">
-            <i className="fas fa-globe feature-icon"></i>
+            {/* <i className="fas fa-globe why-feature-icon"></i> */}
             <div className="feature-text">
+              <i className="fas fa-globe why-feature-icon"></i>
+
               <h3>Global Reach</h3>
               <p>
                 Our discreet and professional approach empowers your business to

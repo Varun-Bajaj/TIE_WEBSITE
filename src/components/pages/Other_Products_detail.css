@@ -166,14 +166,15 @@
 
 .features-list {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
+    margin-top: 25px;
     gap: 10px; /* Reduced gap between features */
 }
 
 .feature-item {
     display: flex;
-    align-items: flex-start;
-    gap: 10px; /* Small gap between icon and text */
+    align-items: center;
+    gap: 5px; /* Small gap between icon and text */
 }
 
 .feature-icon {
@@ -182,6 +183,7 @@
     flex-shrink: 0; /* Ensures icons remain the same size */
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .feature-text {

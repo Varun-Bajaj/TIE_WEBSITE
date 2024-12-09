@@ -11,6 +11,35 @@
   min-height: 70vh;
 }
 
+.scroll-to-top {
+  position: fixed;
+  bottom: 40px;
+  right: 35px; 
+  width: 50px;
+  height: 50px; 
+  background-color: #ff6600; 
+  color: white; 
+  font-size: 24px;
+  border: none;
+  border-radius: 50%; 
+  cursor: pointer; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  display: flex; 
+  align-items: center;
+  justify-content: center; 
+  transition: transform 0.3s ease, opacity 0.3s ease; 
+  z-index: 1000; 
+}
+
+.scroll-to-top:hover {
+  background-color: #e55500;
+}
+
+.scroll-to-top:active {
+  background-color: #cc4b00; 
+}
+
+
 /* Hero Text Section */
 .hero-text {
   flex: 1;
@@ -250,6 +279,7 @@
   /* Orange */
   transition: transform 0.3s ease;
   /* Add transition */
+  text-decoration: none;
 }
 
 .service-card:hover a {
@@ -363,8 +393,9 @@
   /* Orange */
   transition: transform 0.3s ease;
   /* Add transition */
-  padding: 0 1rem 1rem;
+  /* padding: 0 1rem 1rem; */
   /* Add padding */
+  text-decoration: none;
 }
 
 .our-work-card:hover a {
@@ -423,7 +454,7 @@
 .testimonial-cards {
   display: flex;
   justify-content: center;
-  gap: 2rem;
+  gap: 1rem;
   margin-top: 2rem;
 }
 

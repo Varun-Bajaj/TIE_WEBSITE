@@ -16,6 +16,7 @@ const Hero = () => {
     []
   );
   const [currentText, setCurrentText] = useState(texts[0]);
+  const [showScrollTop, setShowScrollTop] = useState(false);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -26,6 +27,26 @@ const Hero = () => {
     }, 2000);
     return () => clearInterval(interval);
   }, [texts]);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 200) {
+        setShowScrollTop(true);
+      } else {
+        setShowScrollTop(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
 
   return (
     <div>
@@ -64,6 +85,13 @@ const Hero = () => {
           </div>
         </div>
       </div>
+
+      {showScrollTop && (
+        <button className="scroll-to-top" onClick={scrollToTop}>
+          ☝️
+        </button>
+      )}
+      
       <div className="services-section">
         <h2 className="services-title">
           <span className="services-gray">Our</span>{" "}
@@ -84,7 +112,7 @@ const Hero = () => {
               From streamlining tasks to creating personalized customer
               interactions, we help...
             </p>
-            <a href=".">Learn More →</a>
+            <a href="/otherproductsdetails">Learn More →</a>
           </div>
           <div className="service-card">
             <img
@@ -97,7 +125,7 @@ const Hero = () => {
               From inventory management to automated product posting, our
               tailored solutions simplify...
             </p>
-            <a href=".">Learn More →</a>
+            <a href="/otherproductsdetails">Learn More →</a>
           </div>
           <div className="service-card">
             <img
@@ -110,7 +138,7 @@ const Hero = () => {
               Whether enhancing the digital presence of established brands or
               guiding local business...
             </p>
-            <a href=".">Learn More →</a>
+            <a href="/otherproductsdetails">Learn More →</a>
           </div>
         </div>
       </div>

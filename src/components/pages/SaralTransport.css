@@ -167,6 +167,7 @@
     max-width: 1100px;
     margin: 20px auto;
     position: relative;
+    border: 0.5px solid;
 }
 
 .services-content .content {
@@ -272,7 +273,18 @@
   .feature {
     display: flex;
     align-items: flex-start;
+    justify-content: center;
     margin-bottom: 20px;
+  }
+
+  .why-feature-icon{
+    color: #f58a07;
+    font-size: 24px;
+    flex-shrink: 0;
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: center;
   }
   
   .feature-icon {
