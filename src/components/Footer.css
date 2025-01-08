@@ -342,3 +342,235 @@
     color: #6c757d;
     /* Secondary text color */
 }
+
+@media (max-width: 768px) {
+
+  /* Collaboration Section */
+
+  .collaboration-section {
+    padding: 5rem 15px;
+    margin-bottom: 0;
+  }
+
+  .collaboration-title {
+    font-size: 32px;
+  }
+
+  .collaboration-subtitle {
+    font-size: 32px;
+  }
+
+  .collaboration-subtitle1 {
+    font-size: 14px;
+    margin-bottom: 1rem;
+  }
+
+  .collaboration-input input {
+    width: 100%;
+  }
+
+  .collaboration-input button {
+    font-size: 0.9rem;
+    padding: 0.75rem 1.2rem;
+  }
+
+  .collaboration-icons {
+    gap: 2rem;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .collaboration-icon {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+
+  .collaboration-icon-title {
+    font-size: 0.9rem;
+  }
+
+  .collaboration-images-star,
+  .collaboration-images-handshake,
+  .collaboration-images-trustedby {
+    margin-right: 0;
+  }
+
+  .collaboration-icon-subtitle {
+    font-size: 0.75rem;
+  }
+
+  /* Footer Adjustments */
+  .sub_footer {
+    padding: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    width: 100%;
+  }
+
+  .footer-left {
+    padding-top: 0;
+    align-items: flex-start;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-logo-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+    justify-content: flex-start;
+  }
+
+  .footer-logo {
+    width: 75px;
+    height: 75px;
+    margin-right: 10px;
+  }
+
+  .footer-logo-text {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .footer-company-name {
+    font-size: 1.4em;
+  }
+
+  .footer-tagline {
+    margin: 5px 0;
+  }
+
+  .footer-social-media {
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+  }
+
+  .footer-nav,
+  .footer-contact,
+  .footer-newsletter {
+    max-width: 100%;
+    margin-top: 15px;
+  }
+
+  .footer-nav a,
+  .footer-contact p {
+    font-size: 14px;
+  }
+
+  .footer-social-media img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .footer-contact a {
+    font-size: 14px;
+  }
+
+  .footer-legal {
+    font-size: 0.8rem;
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  /* Newsletter form adjustments */
+  .newsletter-form input {
+    width: 120px;
+    font-size: 0.9rem;
+  }
+
+  .newsletter-form button {
+    font-size: 0.9rem;
+    padding: 8px 15px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  /* Collaboration Section */
+  
+  .collaboration-title {
+    font-size: 24px;
+  }
+
+  .collaboration-subtitle {
+    font-size: 24px;
+  }
+
+  .collaboration-input input {
+    width: 100%;
+    font-size: 0.85rem;
+  }
+
+  .collaboration-input button {
+    font-size: 0.85rem;
+    padding: 0.75rem 1rem;
+  }
+
+  .collaboration-icons {
+    gap: 1.5rem;
+  }
+
+  .collaboration-icon {
+    margin-bottom: 1.5rem;
+  }
+
+  .collaboration-icon-title {
+    font-size: 0.8rem;
+  }
+
+  .collaboration-icon-subtitle {
+    font-size: 0.7rem;
+  }
+
+  /* Footer Adjustments */
+  .footer-logo {
+    width: 60px;
+    height: 60px;
+  }
+
+  .footer-logo-text {
+    font-size: 0.9rem;
+  }
+
+  .footer-company-name {
+    font-size: 1.2em;
+  }
+
+  .footer-tagline {
+    margin: 5px 0;
+  }
+
+  .footer-description {
+    font-size: 0.9rem;
+    max-width: 100%;
+  }
+
+  .footer-nav a,
+  .footer-contact p {
+    font-size: 14px;
+  }
+
+  .footer-social-media img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .footer-nav-heading,
+  .footer-contact a {
+    font-size: 15px;
+  }
+
+  .footer-legal {
+    font-size: 0.75rem;
+  }
+}
