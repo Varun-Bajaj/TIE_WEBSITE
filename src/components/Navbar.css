@@ -214,3 +214,57 @@
   color: #000;
   /* Link color remains the same on scroll */
 }
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 10px 5px;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .navbar-links li {
+    font-size: 14px;
+  }
+
+  .navbar-links a,
+  .navbar-links button {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+
+  .navbar-brand {
+    width: 100%;
+    /* justify-content: space-between; */
+    margin-bottom: 10px;
+  }
+
+  .navbar-brand .brand-info {
+    margin-left: 5px;
+    text-align: center;
+  }
+
+  .navbar-brand-text{
+    font-size: 16px;
+  }
+
+  .navbar-links {
+    display: none; 
+  }
+
+  .navbar.active .navbar-links {
+    display: block;
+  }
+
+  .navbar .logo {
+    height: 50px; 
+  }
+}
