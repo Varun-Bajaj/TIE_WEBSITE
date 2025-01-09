@@ -476,3 +476,172 @@
 .learn-more:hover {
     text-decoration: underline;
 }
+
+
+/* Responsive styles for screens up to 768px */
+@media (max-width: 768px) {
+    .image-section img {
+        width: 100%;
+    }
+    .trusted-by-section {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .platform-usage-section {
+        flex-direction: column;
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .platform-usage-content {
+        max-width: 100%;
+        padding-left: 0;
+    }
+
+    .platform-rating-section {
+        justify-content: center;
+        padding-right: 0;
+        gap: 20px;
+    }
+
+    .features-grid {
+        gap: 20px;
+    }
+
+    .feature-item {
+        max-width: 100%;
+    }
+
+    .testimonial-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .testimonial-image {
+        width: 100%;
+    }
+
+    .testimonial-content {
+        text-align: center;
+    }
+
+    .testimonial-features {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .product-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .product-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .product-content {
+        text-align: center;
+    }
+
+    /* other-products-container section */
+
+    .other-products-container{
+        flex-direction: column;
+        gap: 20px;
+        padding: 0 15px;
+    }
+
+    .other-products-title{
+        font-size: 25px !important;
+    }
+}
+
+/* Responsive styles for screens up to 480px */
+@media (max-width: 480px) {
+    .saral-title {
+        font-size: 1.8rem;
+    }
+
+    .saral-subtitle {
+        font-size: 1rem;
+    }
+
+    .trusted-by-section {
+        text-align: center;
+    }
+
+    .trusted-title {
+        font-size: 14px;
+    }
+
+    .logo-grid {
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .platform-usage-section {
+        padding: 20px;
+    }
+
+    .platform-usage-title {
+        font-size: 24px;
+    }
+
+    .platform-usage-description {
+        font-size: 14px;
+    }
+
+    .features-grid {
+        gap: 10px;
+    }
+
+    .features-title {
+        font-size: 24px;
+    }
+
+    .feature-item {
+        max-width: 100%;
+    }
+
+    .testimonial-container {
+        gap: 10px;
+    }
+
+    .testimonial-content {
+        font-size: 14px;
+    }
+
+    .testimonial-quote {
+        font-size: 20px;
+    }
+
+    .testimonial-description {
+        font-size: 16px;
+    }
+
+    .testimonial-metrics {
+        font-size: 14px;
+    }
+
+    .other-products-title {
+        font-size: 28px;
+    }
+
+    .product-card {
+        align-items: center;
+    }
+
+    .product-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .product-content {
+        padding: 20px;
+    }
+}
