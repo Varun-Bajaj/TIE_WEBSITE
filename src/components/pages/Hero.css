@@ -514,340 +514,284 @@
 /* Styles for the collaboration section */
 
 /* For Tablets and Smaller Screens (max-width: 768px) */
-@media (max-width: 768px) {
-  .hero-container {
-    flex-direction: column; /* Stack content vertically */
-    padding: 20px; /* Reduce padding */
-    margin: 0; /* Remove margin */
-    min-height: auto; /* Allow content to adjust height */
-  }
 
+/* General Responsive Adjustments */
+@media (max-width: 768px) {
+  /* Hero Section */
+  .hero-container {
+    flex-direction: column;
+    padding: 20px;
+    margin: 0;
+    min-height: auto;
+  }
   .hero-text {
     padding-right: 0;
-    text-align: center; /* Center-align the text */
+    text-align: center;
   }
-
   .hero-text h1 {
-    font-size: 2.5rem; /* Smaller font size */
+    font-size: 2.5rem;
   }
-
   .hero-text h2 {
-    font-size: 2rem; /* Adjusted font size */
+    font-size: 2rem;
   }
-
   .hero-text p {
-    font-size: 1.2rem; /* Smaller paragraph text */
+    font-size: 1.2rem;
   }
-
-  .scroll-to-top {
-    bottom: 20px; /* Adjust position for smaller screens */
-    right: 20px;
-    width: 45px;
-    height: 45px;
-    font-size: 20px;
-  }
-
-  .hero-image-container {
-    width: 100%; /* Ensure the image container takes full width */
-  }
-
-  .hero-image {
-    width: 100%;
-    height: auto; /* Adjust image size */
-  }
-
-  .hero-button {
-    font-size: 16px; /* Smaller button text */
-  }
-
-  .collaboration-item {
-    font-size: 14px; /* Adjust text size */
-    padding: 8px; /* Smaller padding */
-  }
-
-  .automation {
-    top: -10%; /* Adjust positioning */
-    right: 5%;
-  }
-
-  .collaboration {
-    bottom: 10%;
-    left: 2%;
-  }
-
-  .engagement {
-    bottom: 5%;
-    right: 5%;
-  }
-}
-
-/* For Mobile Devices (max-width: 480px) */
-@media (max-width: 480px) {
-  .hero-container {
-    padding: 15px; /* Reduce padding */
-  }
-
-  .hero-text h1 {
-    font-size: 2rem; /* Smaller font size */
-  }
-
-  .hero-text h2 {
-    font-size: 1.8rem; /* Adjusted font size */
-  }
-
-  .hero-text p {
-    font-size: 1rem; /* Smaller paragraph text */
-  }
-
-  .scroll-to-top {
-    bottom: 10px; /* Adjust position for mobile */
-    right: 10px;
-    width: 40px;
-    height: 40px;
-    font-size: 18px;
-  }
-
-  .hero-image-container {
-    width: 100%;
-  }
-
-  .hero-image {
+  .hero-image-container, .hero-image {
     width: 100%;
     height: auto;
   }
-
   .hero-button {
-    font-size: 14px; /* Adjust button text for mobile */
-    padding: 10px 20px;
+    font-size: 16px;
   }
-
   .collaboration-item {
-    font-size: 12px; /* Further reduce text size */
-    padding: 6px;
+    font-size: 14px;
+    padding: 8px;
   }
-
-  .automation, .collaboration, .engagement {
-    font-size: 12px; /* Adjust position and font size */
-    padding: 6px;
+  .collaboration-item h3,
+  .collaboration-item p {
+    font-size: 12px;
   }
-}
-
-/* For tablets and smaller screens (max-width: 768px) */
-@media (max-width: 768px) {
-  .services-title {
-    font-size: 2.5rem; /* Slightly smaller font size */
-  }
-
-  .services-gray,
-  .services-orange {
-    font-size: 36px; /* Smaller font size */
-  }
-
-  .services-subtitle {
-    font-size: 1rem; /* Smaller subtitle font size */
-  }
-
-  .services-cards {
-    flex-direction: column; /* Stack cards vertically */
-    gap: 1.5rem;
-    align-items: center; /* Center align cards */
-    padding: 0 2rem;
-  }
-
-  .service-card {
-    width: 100%; /* Make cards full width on smaller screens */
-    padding: 2rem; /* Adjust padding for smaller screens */
-  }
-
-  .service-card img {
-    width: 60px; /* Slightly smaller image */
-  }
-
-  .service-card h3 {
-    font-size: 20px; /* Smaller card title font size */
-  }
-
-  .service-card p {
-    font-size: 0.9rem; /* Adjust paragraph font size */
-  }
-}
-
-/* For mobile devices (max-width: 480px) */
-@media (max-width: 480px) {
-  .services-title {
-    font-size: 2rem; /* Even smaller font size */
-  }
-
-  .services-gray, .services-orange {
-    font-size: 30px; /* Further reduce font size */
-  }
-
-  .services-subtitle {
-    font-size: 0.9rem; /* Further reduce subtitle font size */
-  }
-
-  .services-cards {
-    gap: 1rem; /* Reduce the gap between cards */
-    padding: 0 1rem;
-  }
-
-  .service-card {
-    width: 100%; /* Ensure cards are full width */
-    padding: 1.5rem; /* Adjust padding for mobile */
-  }
-
-  .service-card img {
-    width: 50px; /* Smaller image for mobile */
-  }
-
-  .service-card h3 {
-    font-size: 18px; /* Smaller card title font size */
-  }
-
-  .service-card p {
-    font-size: 0.85rem; /* Adjust paragraph font size */
-  }
-}
-
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-
-  .testimonial-section{
+  .hero-overlay{
     padding: 0;
   }
+  .automation, .collaboration, .engagement {
+    font-size: 12px;
+  }
 
+  .automation{
+    top: -15%;
+    right: 0;
+  }
+
+  .collaboration{
+    left: 0;
+    bottom: 10%;
+  }
+
+  .engagement{
+    right: 0;
+    bottom: -10%;
+  }
+
+  /* Our Work Section */
+  .our-work-section{
+    padding: 0 10px;
+  }
+  .our-work-title {
+    font-size: 1rem;
+  }
+  .our-work-cards {
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px;
+    margin: 2rem 0;
+  }
+  .our-work-card {
+    width: 100%;
+  }
+
+  /* Services Section */
+  .services-title {
+    font-size: 2.5rem;
+  }
+  .services-gray, .services-orange {
+    font-size: 36px;
+  }
+  .services-subtitle {
+    font-size: 1rem;
+  }
+  .services-cards {
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    padding: 0 2rem;
+  }
+  .service-card {
+    width: 100%;
+    padding: 2rem;
+  }
+  .service-card img {
+    width: 60px;
+  }
+  .service-card h3 {
+    font-size: 20px;
+  }
+  .service-card p {
+    font-size: 0.9rem;
+  }
+
+  /* Testimonials Section */
+  .testimonial-section {
+    padding: 0 !important;
+  }
   .testimonial-cards {
     flex-wrap: wrap;
     justify-content: space-evenly;
     gap: 1.5rem;
   }
-
   .testimonial-card {
-    width: 270px; /* Reduce card width on tablets */
-    padding: 0.75rem; /* Reduce padding for smaller screens */
+    padding: 0.75rem;
   }
-
   .testimonial-quote-icon {
-    font-size: 2.5rem; /* Smaller quote icon */
+    font-size: 2.5rem;
   }
-
   .testimonial-quote {
-    font-size: 1.125rem; /* Slightly smaller quote text */
+    font-size: 1.125rem !important;
   }
-
   .testimonial-card-info {
-    margin-top: 0.75rem; /* Adjust margin for smaller screens */
+    margin-top: 0.75rem;
   }
-
   .testimonial-image {
-    width: 50px; /* Reduce image size */
-    height: 50px; /* Adjust image size */
+    width: 65px !important;
+    height: 65px !important;
   }
-
   .testimonial-author {
-    font-size: 1rem; /* Slightly smaller author font */
+    font-size: 1rem;
+  }
+  .testimonial-title {
+    font-size: 0.875rem;
   }
 
-  .testimonial-title {
-    font-size: 0.875rem; /* Slightly smaller title font */
+  /* Happy Clients Section */
+  .happy-clients-section {
+    padding: 3rem 20px;
+  }
+  .happy-clients-title {
+    font-size: 2.5rem;
+  }
+  .happy-clients-gray, .happy-clients-orange {
+    font-size: 36px;
+  }
+  .happy-clients-subtitle {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  /* Scroll to Top Button */
+  .scroll-to-top {
+    bottom: 60px;
+    right: 55px;
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
   }
 }
 
 @media (max-width: 480px) {
-  .testimonial-section{
-    padding: 0;
+  /* Hero Section */
+  .hero-container {
+    padding: 15px;
+    height: 85vh;
+  }
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+  .hero-text h2 {
+    font-size: 1.8rem;
+  }
+  .hero-text p {
+    font-size: 1rem;
+  }
+  .hero-button {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+  .collaboration-item {
+    font-size: 12px;
+    padding: 6px;
   }
 
+  .automation{
+    top: -15%;
+    right: 0;
+  }
+
+  .collaboration{
+    left: 0;
+    bottom: 10%;
+  }
+
+  .engagement{
+    right: 0;
+    bottom: -10%;
+  }
+
+  /* Services Section */
+  .services-title {
+    font-size: 2rem;
+  }
+  .services-gray, .services-orange {
+    font-size: 30px;
+  }
+  .services-subtitle {
+    font-size: 0.9rem;
+  }
+  .services-cards {
+    gap: 1rem;
+    padding: 0 1rem;
+  }
+  .service-card {
+    padding: 1.5rem;
+  }
+  .service-card img {
+    width: 50px;
+  }
+  .service-card h3 {
+    font-size: 18px;
+  }
+  .service-card p {
+    font-size: 0.85rem;
+  }
+
+  /* Testimonials Section */
   .testimonial-cards {
     gap: 1rem;
   }
-
   .testimonial-card {
-    width: 100%; /* Full width on mobile */
-    padding: 1rem; /* Restore padding on mobile */
+    padding: 1rem;
   }
-
   .testimonial-quote-icon {
-    font-size: 2rem; /* Smaller quote icon for mobile */
+    font-size: 2rem;
   }
-
   .testimonial-quote {
-    font-size: 1rem; /* Adjust quote font size */
+    font-size: 1rem !important;
   }
-
   .testimonial-card-info {
-    margin-top: 0.5rem; /* Reduce margin for mobile screens */
+    margin-top: 0.5rem;
   }
-
   .testimonial-image {
-    width: 45px; /* Further reduce image size */
-    height: 45px; /* Further reduce image size */
+    width: 45px;
+    height: 45px;
   }
-
   .testimonial-author {
-    font-size: 0.9rem; /* Slightly smaller font for author */
+    font-size: 0.9rem;
   }
-
   .testimonial-title {
-    font-size: 0.75rem; /* Reduce font size for mobile */
-  }
-}
-
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-
-  .scroll-to-top {
-    bottom: 60px;
-    right: 55px;
-    width: 50px;
-    height: 50px;
-    font-size: 25px;
+    font-size: 0.75rem;
   }
 
+  /* Happy Clients Section */
   .happy-clients-section {
-    padding: 3rem 20px; /* Adjust padding for smaller screens */
+    padding: 2rem 15px;
   }
-
   .happy-clients-title {
-    font-size: 2.5rem; /* Smaller font size on tablets and small screens */
+    font-size: 2rem;
   }
-
-  .happy-clients-gray, 
-  .happy-clients-orange {
-    font-size: 36px; /* Adjust font size */
+  .happy-clients-gray, .happy-clients-orange {
+    font-size: 28px;
   }
-
   .happy-clients-subtitle {
-    font-size: 1rem; /* Smaller subtitle */
-    margin-bottom: 1.5rem; /* Reduced margin for smaller screens */
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
   }
-}
 
-@media (max-width: 480px) {
-
+  /* Scroll to Top Button */
   .scroll-to-top {
-    bottom: 60px;
-    right: 55px;
-    width: 50px;
-    height: 50px;
+    bottom: 40px;
+    right: 30px;
+    width: 40px;
+    height: 40px;
     font-size: 25px;
-  }
-
-  .happy-clients-section {
-    padding: 2rem 15px; /* Further reduce padding for mobile */
-  }
-
-  .happy-clients-title {
-    font-size: 2rem; /* Smaller title font size */
-  }
-
-  .happy-clients-gray,
-  .happy-clients-orange {
-    font-size: 28px; /* Further reduce font size */
-  }
-
-  .happy-clients-subtitle {
-    font-size: 0.9rem; /* Smaller subtitle font size */
-    margin-bottom: 1rem; /* Reduced margin */
   }
 }
