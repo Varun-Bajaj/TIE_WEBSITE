@@ -23,7 +23,7 @@ const OurWork = () => {
       </div>
 
       {/* Image and text content */}
-      <div className="image-content">
+      <div className="our-work-image-content">
         <div className="left-content">
           <div className="image-item1">
             <img src={our1} alt="Group of friends" />
