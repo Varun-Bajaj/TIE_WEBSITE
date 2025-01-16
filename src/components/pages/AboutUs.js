@@ -41,63 +41,63 @@ const AboutUs = () => {
       </div>
       {/* Testimonial Section */}
       <div className="testimonial-section">
-        <div className="testimonial-container">
-          <img src={img} alt="Testimonial" className="testimonial-image" />
-          <div className="testimonial-content">
-            <p className="testimonial-stats">
+        <div className="about-us-testimonial-container">
+          <img src={img} alt="Testimonial" className="about-us-testimonial-image" />
+          <div className="about-us-testimonial-content">
+            <p className="about-us-testimonial-stats">
               81% say their teamwork is more efficient
             </p>
-            <h2 className="testimonial-quote">
+            <h2 className="about-us-testimonial-quote">
               “We manage too many people to constantly be searching for stuff.”
             </h2>
-            <p className="testimonial-description">
+            <p className="about-us-testimonial-description">
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
               nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
               erat, sed diam voluptua. At vero eos et accusam et justo duo
               dolores et ea rebum.
             </p>
-            <p className="testimonial-author">
+            <p className="about-us-testimonial-author">
               <strong>John Mathews</strong>, Chief Officer, MI industries
             </p>
           </div>
         </div>
         {/* New Testimonial Section with Reversed Layout */}
-        <div className="testimonial-container reverse-layout">
-          <div className="testimonial-content">
-            <p className="testimonial-stats">
+        <div className="about-us-testimonial-container reverse-layout">
+          <div className="about-us-testimonial-content">
+            <p className="about-us-testimonial-stats">
               81% say their teamwork is more efficient
             </p>
-            <h2 className="testimonial-quote">
+            <h2 className="about-us-testimonial-quote">
               “We manage too many people to constantly be searching for stuff.”
             </h2>
-            <p className="testimonial-description">
+            <p className="about-us-testimonial-description">
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
               nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
               erat, sed diam voluptua. At vero eos et accusam et justo duo
               dolores et ea rebum.
             </p>
-            <p className="testimonial-author">
+            <p className="about-us-testimonial-author">
               <strong>John Mathews</strong>, Chief Officer, MI industries
             </p>
           </div>
-          <img src={img} alt="Testimonial" className="testimonial-image" />
+          <img src={img} alt="Testimonial" className="about-us-testimonial-image" />
         </div>
-        <div className="testimonial-container">
-          <img src={img} alt="Testimonial" className="testimonial-image" />
-          <div className="testimonial-content">
-            <p className="testimonial-stats">
+        <div className="about-us-testimonial-container">
+          <img src={img} alt="Testimonial" className="about-us-testimonial-image" />
+          <div className="about-us-testimonial-content">
+            <p className="about-us-testimonial-stats">
               81% say their teamwork is more efficient
             </p>
-            <h2 className="testimonial-quote">
+            <h2 className="about-us-testimonial-quote">
               “We manage too many people to constantly be searching for stuff.”
             </h2>
-            <p className="testimonial-description">
+            <p className="about-us-testimonial-description">
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
               nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
               erat, sed diam voluptua. At vero eos et accusam et justo duo
               dolores et ea rebum.
             </p>
-            <p className="testimonial-author">
+            <p className="about-us-testimonial-author">
               <strong>John Mathews</strong>, Chief Officer, MI industries
             </p>
           </div>
