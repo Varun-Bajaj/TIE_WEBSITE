@@ -402,15 +402,15 @@
 
   /* Footer Adjustments */
   .sub_footer {
-    padding: 20px;
+    padding: 15px;
     flex-direction: column;
-    align-items: flex-start;
+    /* align-items: flex-start; */
   }
 
   .footer-content {
     flex-direction: column;
-    align-items: flex-start;
-    padding: 10px;
+    /* align-items: flex-start; */
+    padding: 0;
     width: 100%;
   }
 
@@ -490,7 +490,7 @@
 
   .newsletter-form button {
     font-size: 0.9rem;
-    padding: 8px 15px;
+    /* padding: 8px 15px; */
   }
 }
 
