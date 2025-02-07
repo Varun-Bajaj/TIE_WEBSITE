@@ -226,7 +226,7 @@
 
   .navbar.shrink{
     margin: 0 auto;
-    width: 95%;
+    width: 90%;
   }
 
   .navbar-links {
@@ -252,7 +252,7 @@
   }
 
   .navbar-links button {
-    padding: 0 10px;
+    padding: 0 6px;
   }
 
   .navbar-brand {
@@ -286,6 +286,21 @@
   .navbar .logo {
     height: 50px; 
   }
+
+  .dropdown-menu {
+   min-width: 135px;
+   left: -30px;
+   padding: 5px;
+  }
+
+  .dropdown-menu .dropdown-menu-btns{
+    padding: 8px;
+  }
+
+  /* .dropdown-menu button {
+    font-size: 16px;
+    padding: 12px 15px;
+  } */
 }
 
 @media (max-width: 480px) {
@@ -313,7 +328,7 @@
   }
 
   .navbar-links button {
-    padding: 0 10px;
+    padding: 0 6px;
   }
 
   .navbar-brand {
@@ -344,4 +359,14 @@
   .navbar .logo {
     height: 50px; 
   }
+
+  /* .dropdown-menu {
+    width: 100%;
+    padding: 8px;
+  }
+
+  .dropdown-menu button {
+    font-size: 14px;
+    padding: 10px;
+  } */
 }

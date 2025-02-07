@@ -376,6 +376,10 @@
 
 /* Media Query for screens 786px and smaller */
 @media (max-width: 786px) {
+    .saral-transport-container{
+        padding: 0 10px ;
+    }
+
     .content-section {
         flex-direction: column;
         align-items: flex-start;
@@ -532,7 +536,7 @@
     }
 
     .large-image {
-        max-width: 90%; 
+        max-width: 100%; 
         margin: 0 auto;
     }
 

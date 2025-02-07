@@ -74,8 +74,8 @@ const Navbar = ({ navigate }) => {
             Solutions {isSolutionsDropdownOpen ? '▲' : '▼'}
           </button>
           <ul className="dropdown-menu">
-            <li><button onClick={() => handleNavigate('/saraleway')}>Saral eWay</button></li>
-            <li><button onClick={() => handleNavigate('/saraltransport')}>Saral Transport</button></li>
+            <li><button className="dropdown-menu-btns" onClick={() => handleNavigate('/saraleway')}>Saral eWay</button></li>
+            <li><button className="dropdown-menu-btns" onClick={() => handleNavigate('/saraltransport')}>Saral Transport</button></li>
           </ul>
         </li>
         <li><button onClick={() => handleNavigate('/ourwork')}>Our Work</button></li>
@@ -85,8 +85,8 @@ const Navbar = ({ navigate }) => {
             Resources {isResourcesDropdownOpen ? '▲' : '▼'}
           </button>
           <ul className="dropdown-menu">
-            <li><button onClick={() => handleNavigate('/blogs')}>Articles</button></li>
-            <li><button onClick={() => handleNavigate('/resources')}>Helpful Resources</button></li>
+            <li><button className="dropdown-menu-btns" onClick={() => handleNavigate('/blogs')}>Articles</button></li>
+            <li><button className="dropdown-menu-btns" onClick={() => handleNavigate('/resources')}>Helpful Resources</button></li>
           </ul>
         </li>
 

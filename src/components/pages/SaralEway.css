@@ -480,6 +480,10 @@
 
 /* Responsive styles for screens up to 768px */
 @media (max-width: 768px) {
+    .features-section{
+        padding: 0;
+    }
+    
     .image-section img {
         width: 100%;
     }
